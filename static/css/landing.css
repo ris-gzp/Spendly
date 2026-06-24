@@ -1,0 +1,208 @@
+/* ------------------------------------------------------------------ */
+/* Hero — centered layout                                              */
+/* ------------------------------------------------------------------ */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hero-center {
+    max-width: 680px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 2rem;
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5.5vw, 4rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+}
+
+.hero-title em {
+    font-style: italic;
+    color: var(--accent);
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--ink-muted);
+    line-height: 1.7;
+    max-width: 520px;
+    margin: 0 auto 2.5rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-actions .btn-primary,
+.hero-actions .btn-ghost {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+}
+
+/* ------------------------------------------------------------------ */
+/* Dashboard mockup                                                    */
+/* ------------------------------------------------------------------ */
+
+.hero-dashboard {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 4rem;
+}
+
+.dash-window {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem 2rem 2rem;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.06);
+}
+
+.dash-dots {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 1.75rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-red { background: #f5a0a0; }
+.dot-yellow { background: #f5d68a; }
+.dot-green { background: #8dd5b4; }
+
+.dash-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat-card {
+    background: var(--paper);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: left;
+}
+
+.stat-label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--ink-muted);
+}
+
+.stat-value {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--ink);
+}
+
+.stat-note {
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+}
+
+.stat-note-green {
+    color: var(--accent);
+}
+
+.dash-bars {
+    background: var(--paper);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.dash-bar-row {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.dash-cat {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    text-align: left;
+}
+
+.dash-bar-track {
+    height: 8px;
+    background: var(--border-soft);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.dash-bar {
+    height: 100%;
+    border-radius: 999px;
+}
+
+.dash-bar-orange { background: #d4a03c; }
+.dash-bar-blue { background: #3b7dd8; }
+.dash-bar-purple { background: #7b6bb5; }
+
+/* ------------------------------------------------------------------ */
+/* Responsive                                                          */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 600px) {
+    .hero { padding: 3rem 1rem 2rem; }
+
+    .dash-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-dashboard {
+        margin-top: 2.5rem;
+    }
+
+    .dash-window {
+        padding: 1.25rem;
+    }
+}
