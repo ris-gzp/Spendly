@@ -371,6 +371,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ------------------------------------------------------------------ */
+<<<<<<< HEAD
 /* Legal pages (Terms, Privacy)                                        */
 /* ------------------------------------------------------------------ */
 
@@ -410,13 +411,31 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ------------------------------------------------------------------ */
+=======
+>>>>>>> f0adb6c85772c2a15d76f89b51d9fde11c956898
 /* Responsive                                                          */
 /* ------------------------------------------------------------------ */
 
 @media (max-width: 900px) {
+<<<<<<< HEAD
+=======
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-subtitle { max-width: 100%; }
+    .hero-actions { justify-content: center; }
+    .hero-visual { display: none; }
+
+>>>>>>> f0adb6c85772c2a15d76f89b51d9fde11c956898
     .features-inner { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
     .nav-links a:not(.nav-cta) { display: none; }
+<<<<<<< HEAD
+=======
+    .hero { padding: 3rem 1rem 2rem; }
+>>>>>>> f0adb6c85772c2a15d76f89b51d9fde11c956898
 }
